@@ -26,7 +26,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void delete(int id) {
-        entityManager.remove(entityManager.find(User.class,id));
+        entityManager.remove(entityManager.find(User.class, id));
     }
 
     @Override

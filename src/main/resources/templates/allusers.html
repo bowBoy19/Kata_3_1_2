@@ -24,7 +24,7 @@
         <td th:text="${user.age}"></td>
 
         <td>
-            <form th:method="DELETE"   th:action="@{/{id}(id=${user.getId()})}" >
+            <form th:method="DELETE"   th:action="@{/{id}(id=${user.getId()})}">
                 <input type="submit" value="DELETE">
             </form>
             <form th:method="GET" th:action="@{/{id}/edit(id=${user.getId()})}" >
